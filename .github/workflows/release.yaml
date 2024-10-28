@@ -18,6 +18,7 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@f43a0e5ff2bd294095638e18286ca9a3d1956744 # v3
         with:
+          fetch-tags: true
           fetch-depth: 0
 
       - name: Setup yarn

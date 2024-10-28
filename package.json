@@ -9,8 +9,8 @@
     "test:coverage": "turbo run test:coverage",
     "build": "turbo run build",
     "typecheck": "turbo run typecheck",
-    "version": "yarn changeset version && yarn install",
-    "release": "yarn changeset tag",
+    "version": "yarn changeset version && yarn --mode update-lockfile && yarn install",
+    "release": "yarn changeset publish",
     "generate": "turbo run generate"
   },
   "devDependencies": {
